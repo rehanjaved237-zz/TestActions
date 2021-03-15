@@ -34,4 +34,7 @@ jobs:
     - name: Git branch
       run: |
         git branch
-        git config --global --list
+
+    - name: Print name
+      run: |
+        echo "This is a new file"
