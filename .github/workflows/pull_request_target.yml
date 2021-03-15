@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
+      with:
+        ref: ${{github.event.pull_request.head.ref}}
 
     - name: Dump GitHub context
       env:
@@ -34,4 +36,7 @@ jobs:
     - name: Git branch
       run: |
         git branch
-        git config --global --list
+
+    - name: Print name
+      run: |
+        echo "This is a new file"
