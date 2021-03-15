@@ -34,7 +34,3 @@ jobs:
     - name: Git branch
       run: |
         git branch
-
-    - name: Print name
-      run: |
-        echo "This is a new file"
