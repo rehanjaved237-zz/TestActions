@@ -1,7 +1,7 @@
 name: Pull Request
 
 on:
-  pull_request:
+  pull_request_target:
     branches:
       - master
 
@@ -16,4 +16,4 @@ jobs:
 
     - name: Echo file
       run: |
-        cat README.md
+        echo README.md
