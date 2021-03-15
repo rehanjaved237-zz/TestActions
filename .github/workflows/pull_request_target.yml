@@ -1,4 +1,4 @@
-name: Pull Request
+name: Pull Request Target
 
 on:
   pull_request_target:
@@ -16,4 +16,4 @@ jobs:
 
     - name: Echo file
       run: |
-        echo README.md
+        cat README.md
