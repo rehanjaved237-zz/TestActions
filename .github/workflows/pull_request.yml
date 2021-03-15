@@ -34,4 +34,3 @@ jobs:
     - name: Git branch
       run: |
         git branch
-        git config --global --list
