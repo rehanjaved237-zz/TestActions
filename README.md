@@ -1,10 +1,5 @@
 # Readme Test
 
-This is an updated readme
-This is the new readme.
-
-Pakistan, 
-This is the readme for the pull request
-
-Final Test:
-This is the new readme
+Readme Test
+This is the readme Test. 
+This is the readme in the pull request
