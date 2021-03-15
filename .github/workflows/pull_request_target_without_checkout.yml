@@ -1,0 +1,16 @@
+name: Pull Request Target Without Checkout
+
+on:
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    name: Build
+    if: "! contains(toJSON(github.event.commits.*.message), '[skip-ci]')"    
+    steps:
+    - name: Echo file
+      run: |
+        cat README.md
